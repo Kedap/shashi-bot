@@ -1,0 +1,4 @@
+#!/bin/bash
+pushd /opt/shashi > /dev/null
+npm run start
+popd > /dev/null

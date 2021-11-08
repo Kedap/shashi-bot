@@ -1,0 +1,27 @@
+[paquete]
+
+nombre = "shashi"
+version = "1.0.0"
+rama = "estable"
+descrip = "Un asistente personal en telegram"
+pagina = "https://github.com/kedap/shashi-bot"
+licensia = "GPLv3"
+dependencias = ["npm", "node"]
+conflicto = "/etc/sashi/"
+
+[npm]
+package_json = true
+ruta_package_json = "package.json"
+
+[descarga]
+
+git = "https://github.com/kedap/shashi-bot.git"
+carpeta = "shashi-bot"
+sha256sum = "SALTAR"
+
+[instalacion]
+
+opt_src = true
+files = ["tg-shashi", "tg-shashi.service"]
+ruta = ["/usr/bin/tg-shashi", "/lib/systemd/system/tg-shashi.service"]
+post_install = "post_apmpkg.sh"

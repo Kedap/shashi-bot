@@ -1,0 +1,10 @@
+[Unit]
+Description=tg-shashi asistente
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/tg-shashi
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
